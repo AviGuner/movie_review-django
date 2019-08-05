@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}MovieReview{% endblock %}
+{% block content %}
+<div class="container">
+	<h1>Movies</h1>
+	<div class="row">
+		{% for movie in movies %}
+		<div class="col-md-4">
+			<div class="card mb-4 shadow-sm">
+				<div class="card-body">
+					<img src="{{ movie.cover_url }}" class="movie-cover">
+					<p class="card-header-pills">{{ movie.title }}</p>
+					<div class="d-flex justify-content-between align-items-center">
+						<div class="btn-group">
+							<a class="btn btn-sm btn-outline-primary" href="{% url 'portal:show_movie' movie.pk %}">Reviews</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}
