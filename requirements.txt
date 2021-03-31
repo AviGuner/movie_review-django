@@ -1,7 +1,7 @@
 Django==2.2
 Faker==1.0.4
 IMDbPY==6.6
-lxml==4.3.3
+lxml==4.6.3
 python-dateutil==2.8.0
 pytz==2018.9
 six==1.12.0
