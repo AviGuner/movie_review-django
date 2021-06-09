@@ -1,4 +1,4 @@
-Django==2.2
+Django==2.2.22
 Faker==1.0.4
 IMDbPY==6.6
 lxml==4.3.3
